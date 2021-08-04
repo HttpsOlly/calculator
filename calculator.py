@@ -81,6 +81,7 @@ addition = Button(root, text="+", padx=40, pady=20, command=addclick)
 subtract = Button(root, text="–", padx=40, pady=20, command=minusclick)
 multiply = Button(root, text="x", padx=40, pady=20, command=timesclick)
 division = Button(root, text="÷", padx=40, pady=20, command=divideclick)
+exit = Button(root, text="Exit Calculator", padx=40, pady=20, command=root.quit)
 
 #Place Calc Buttons
 number_7.grid(row=1, column=0)
@@ -104,6 +105,8 @@ subtract.grid(row=5, column=2)
 
 multiply.grid(row=6, column=1)
 division.grid(row=6, column=2)
+
+exit.grid(row=7, column=0, columnspan=3)
 
 #Run Process
 root.mainloop()
